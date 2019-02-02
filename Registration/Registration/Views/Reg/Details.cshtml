@@ -1,0 +1,36 @@
+﻿@model Registration.Models.Reg
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Reg</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.rname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.rname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.username)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.username)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.password)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.password)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.RegId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
