@@ -1,0 +1,8 @@
+<div>
+  <p>{{user.name}}</p>
+  
+  <button (click)="toggle()">expand/compres</button>
+  <div *ngIf=!collapse>
+    <p>{{user.job}}</p>
+  </div>
+</div>
